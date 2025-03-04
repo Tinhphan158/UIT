@@ -1,0 +1,7 @@
+1. Lấy một mô hình trong thực tế và phân tích lợi ích khi sử dụng
+ - capture model
+ - lĩnh vực áp dụng
+ - tác dụng của model
+ - Viết trong 1 page
+ 
+ 

@@ -1,0 +1,7 @@
+Bài tập GUI3:
+- Xây dựng ứng dụng hỗ trợ:
++ Vẽ các hình cơ bản (Tam giác, hình chữ nhật, hình tròn).
++ Export hình hiện tại ra file ảnh .png
+- Xây dựng ứng dụng:
++ Mỗi lần click vào form 1 hình tròn bán kính 20 được tạo ra với màu ngẫu nhiên trong màu (Đỏ, Vàng, Xanh)
++ Các hình tròn sẽ rơi tự do từ vị trí click cho đến khi vượt qua khung màn hình sẽ bị biến mất.

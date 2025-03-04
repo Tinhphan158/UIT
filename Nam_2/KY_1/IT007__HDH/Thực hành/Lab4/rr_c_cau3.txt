@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    int i, n, stoptime , x, flag = 0, timequantum;
+    int wt = 0, tat=0, pn[10], bur[10], temp_bur[10];
+    float avgwt,avgtat;
+    
+    FILE *filein, *fileout;
+    filein = fopen("input.txt","rt");
+    fileout = fopen("output.txt","wt");
+    
+    fscanf(filein,"%d%d",&n,&timequantum);
+    x = n;
+    for(i=0;i<n;i++) {
+       fscanf(filein,"%d%d",&pn[i],&bur[i]);
+       temp_bur[i] = bur[i];
+    }
+    fclose(filein);
+    for(stoptime = 0,i = 0; x != 0; )
+    {
+        if(temp_bur[i] <= timequantum && temp_bur[i] > 0)
+        {
+            int starttime =  stoptime;
+            stoptime += temp_bur[i];
+            flag = 1;
+            temp_bur[i] = 0;
+            fprintf(fileout,"%d %d %d\n", pn[i], starttime, stoptime);
+        }else if(temp_bur[i] > 0)
+        {
+            temp_bur[i] -= timequantum;
+            stoptime += timequantum;
+            fprintf(fileout,"%d %d %d\n", pn[i], stoptime - timequantum, stoptime);
+        }
+        if(temp_bur[i] == 0 && flag == 1)
+        {
+            x--;
+            wt += stoptime - bur[i];
+            tat += stoptime;
+            flag = 0;
+        }
+        if( i == n-1 )
+           i = 0;
+        else if(stoptime > 0)
+           i++;
+        else 
+           i = 0;
+    }
+   avgwt = (float)wt/n;
+   avgtat = (float)tat/n;
+   fprintf(fileout,"%.2f\n",(round(avgwt * 100)/100));
+   fprintf(fileout,"%.2f\n",(round(avgtat * 100)/100));
+   fclose(fileout);
+   return 0;
+}
+

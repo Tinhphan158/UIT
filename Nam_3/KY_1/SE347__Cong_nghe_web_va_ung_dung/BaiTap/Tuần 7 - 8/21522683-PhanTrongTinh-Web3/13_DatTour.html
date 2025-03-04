@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13_DatTour</title>
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+        }
+        html, body {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+      
+        @media only screen and (max-width: 640px) {
+            .title {
+                text-align: center;
+                width: 100%;
+                color: #1914fe;
+                font-size: 28px;
+                margin: 20px 0;
+            }
+            table, td{
+                border: 1px solid #1914fe;
+                border-collapse: collapse;
+                background-color: #ffffcd;
+                padding: 8px;
+            }
+            span {
+                color: #2e3ff9;
+            }
+            label {
+                color: #2e3ff9;
+                margin-left: 5px;
+            }
+            fieldset {
+                color: #2e3ff9;
+                border: 2px solid #51514c;
+                width: 280px;
+                padding-bottom: 20px;
+            }
+            .container-field {
+                text-align: -webkit-center;
+            }
+            #name {
+                border: 1px solid #ccc;
+                width: 200px;
+                outline: none;
+                padding: 4px 10px;
+            }
+            textarea {
+                outline: none;
+                padding: 4px 10px;
+                border: 1px solid #ccc;
+                width: 300px;
+            }
+            #phone {
+                border: 1px solid #ccc;
+                width: 140px;
+                outline: none;
+                padding: 4px 10px;
+            }
+            #tour {
+                border: 1px solid #ccc;
+                outline: none;
+                padding: 4px 10px;
+            }
+            #xedulich {
+                margin-left: 6px;
+            }
+            legend {
+                padding: 10px;
+            }
+            #nguoi_lon, #tre_em {
+                border: 1px solid #ccc;
+                outline: none;
+                width: 80px;
+            }
+            #btn-yes {
+                padding: 4px 10px;
+                font-size: 14px;
+                border: 1px solid #ccc;
+                cursor: pointer;
+                margin: 0 10px;
+            }
+            #lbl-text {
+                color: #cd1128;
+                font-weight: bold;
+            }
+        }
+
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+            .title {
+                text-align: center;
+                width: 100%;
+                color: #1914fe;
+                font-size: 28px;
+                margin: 20px 0;
+            }
+            table, td {
+                border: 1px solid #1914fe;
+                border-collapse: collapse;
+                background-color: #ffffcd;
+                width: 700px;
+                padding: 8px;
+            }
+            span {
+                color: #2e3ff9;
+            }
+            label {
+                color: #2e3ff9;
+                margin-left: 5px;
+            }
+            fieldset {
+                color: #2e3ff9;
+                border: 2px solid #51514c;
+                width: 500px;
+                padding-bottom: 20px;
+            }
+            .container-field {
+                text-align: -webkit-center;
+            }
+            #name {
+                border: 1px solid #ccc;
+                width: 300px;
+                outline: none;
+                padding: 4px 10px;
+            }
+            textarea {
+                outline: none;
+                padding: 4px 10px;
+                border: 1px solid #ccc;
+            }
+            #phone {
+                border: 1px solid #ccc;
+                width: 200px;
+                outline: none;
+                padding: 4px 10px;
+            }
+            #tour {
+                border: 1px solid #ccc;
+                outline: none;
+                padding: 4px 10px;
+            }
+            #xedulich {
+                margin-left: 6px;
+            }
+            legend {
+                padding: 10px;
+            }
+            #nguoi_lon, #tre_em {
+                border: 1px solid #ccc;
+                outline: none;
+                width: 120px;
+            }
+            #btn-yes {
+                padding: 4px 10px;
+                font-size: 14px;
+                border: 1px solid #ccc;
+                cursor: pointer;
+                margin: 0 10px;
+            }
+            #lbl-text {
+                color: #cd1128;
+                font-weight: bold;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .title {
+                text-align: center;
+                width: 100%;
+                color: #1914fe;
+                font-size: 28px;
+                margin: 20px 0;
+            }
+            table, td {
+                border: 1px solid #1914fe;
+                border-collapse: collapse;
+                background-color: #ffffcd;
+                width: 700px;
+                padding: 8px;
+            }
+            span {
+                color: #2e3ff9;
+            }
+            label {
+                color: #2e3ff9;
+                margin-left: 5px;
+            }
+            fieldset {
+                color: #2e3ff9;
+                border: 2px solid #51514c;
+                width: 500px;
+                padding-bottom: 20px;
+            }
+            .container-field {
+                text-align: -webkit-center;
+            }
+            #name {
+                border: 1px solid #ccc;
+                width: 300px;
+                outline: none;
+                padding: 4px 10px;
+            }
+            textarea {
+                outline: none;
+                padding: 4px 10px;
+                border: 1px solid #ccc;
+            }
+            #phone {
+                border: 1px solid #ccc;
+                width: 200px;
+                outline: none;
+                padding: 4px 10px;
+            }
+            #tour {
+                border: 1px solid #ccc;
+                outline: none;
+                padding: 4px 10px;
+            }
+            #xedulich {
+                margin-left: 6px;
+            }
+            legend {
+                padding: 10px;
+            }
+            #nguoi_lon, #tre_em {
+                border: 1px solid #ccc;
+                outline: none;
+                width: 120px;
+            }
+            #btn-yes {
+                padding: 4px 10px;
+                font-size: 14px;
+                border: 1px solid #ccc;
+                cursor: pointer;
+                margin: 0 10px;
+            }
+            #lbl-text {
+                color: #cd1128;
+                font-weight: bold;
+            }
+        }
+        
+
+    </style>
+    <script>
+        function Check() {
+            let name = document.getElementById('name');
+            let address = document.getElementById('address');
+            let phone = document.getElementById('phone');
+            let adult = document.getElementById('nguoi_lon');
+            let child = document.getElementById('tre_em');
+            let note = document.getElementById('note');
+            let lbl = document.getElementById('lbl-text');
+
+            if (name.value === "" || name.value === null)
+            {
+                alert('Vui lòng nhập họ tên !');
+                return false;
+            }
+            if (address.value === "" || address.value === null)
+            {
+                alert('Vui lòng nhập địa chỉ !');
+                return false;
+            }
+            if (phone.value === "" || phone.value === null)
+            {
+                alert('Vui lòng nhập số điện thoại !');
+                return false;
+            }
+            else {
+                let regrex = /(03|05|07|08|09|01[2|6|8|9])+([0-9]{8})\b/;
+                if (!String(phone.value).toLowerCase().match(regrex))
+                {
+                    alert('Số điện thoại không hợp lệ. Vui lòng nhập lại !');
+                    return false;
+                }
+            }
+
+            if (adult.value === "" || adult.value === null)
+            {
+                alert('Vui lòng nhập số lượng người lớn !');
+                return false;
+            }
+            if (child.value === "" || child.value === null)
+            {
+                alert('Vui lòng nhập số lượng trẻ em !');
+                return false;
+            }
+            if (note.value === "" || note.value === null)
+            {
+                alert('Vui lòng nhập ghi chú !');
+                return false;
+            }
+
+            alert('Bạn đã đăng ký thành công !!!');
+            lbl.innerText = "Bạn đã đăng ký thành công !!!"
+            return true;
+        }
+
+        function Refresh() {
+            let name = document.getElementById('name');
+            let address = document.getElementById('address');
+            let phone = document.getElementById('phone');
+            let adult = document.getElementById('nguoi_lon');
+            let child = document.getElementById('tre_em');
+            let note = document.getElementById('note');
+            let lbl = document.getElementById('lbl-text');
+
+            name.value = "";
+            address.value = "";
+            phone.value = "";
+            adult.value = "";
+            child.value = "";
+            note.value = "";
+            lbl.innerText = "";
+
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">ĐĂNG KÝ DU LỊCH</h1>
+        <table>
+            <tr>
+                <td><span>Họ tên</span></td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td><span>Địa chỉ</span></td>
+                <td><textarea id="address" cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td><span>Số điện thoại</span></td>
+                <td><input type="number" id="phone"></td>
+            </tr>
+            <tr>
+                <td><span>Khách việt nam</span></td>
+                <td><input type="checkbox" id="guest"></td>
+            </tr>
+            <tr>
+                <td><span>Chọn tour</span></td>
+                <td>
+                    <select id="tour">
+                        <optgroup label="Miền Bắc">
+                            <option value="1" selected="selected">Hà Nội - Hạ Long - Sapa</option>
+                            <option value="2">Hà Nội - Chùa Hương - Ninh Bình</option>
+                            <option value="3">Hà Nội - Cát Bà - Tuần Châu</option>
+                        </optgroup>
+                        <optgroup label="Miền Trung">
+                            <option value="4">Huế - Bạch Mã - Đà Nẵng</option>
+                            <option value="5">Nha Trang - Đà Lạt</option>
+                            <option value="6">Buôn Mê Thuột - Gia Lai - Kontum</option>
+                        </optgroup>
+                            <optgroup label="Miền Nam">
+                            <option value="7">TpHCM - Cần Thơ - Cà Mau</option>
+                            <option value="8">Phú Quốc - Côn Đảo</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><span>Phương tiện</span></td>
+                <td>
+                    <input type="radio" name="phuongtien" id="maybay" checked>
+                    <label for="maybay">Máy bay</label>
+                    <input type="radio" name="phuongtien" id="xedulich">
+                    <label for="xedulich">Xe du lịch</label>
+                </td>
+                
+            </tr>
+            <tr>
+                <td colspan="2" class="container-field">
+                    <fieldset>
+                        <legend>Số lượng đoàn khách</legend>
+                        Người lớn <input id="nguoi_lon" type="number" size="10" maxlength="15" />
+                        Trẻ em <input id="tre_em" type="number" size="10" maxlength="15" />
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td><span>Ghi chú thêm</span></td>
+                <td><textarea id="note" cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="container-field">
+                    <button id="btn-yes" onclick="Check();">Đồng ý</button>
+                    <button id="btn-yes" onclick="Refresh();">Làm lại</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="container-field"><p id="lbl-text"></p></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

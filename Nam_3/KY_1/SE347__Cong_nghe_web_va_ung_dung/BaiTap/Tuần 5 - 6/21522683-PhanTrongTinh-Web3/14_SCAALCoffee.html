@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14_SCAALCoffee</title>
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+        }
+        html, body {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+        .container-main {
+            margin: 10px 0;
+            border: 1px solid #000;
+            padding-left: 10px;
+        }
+        .container-body {
+            display: flex;
+            height: 100%;
+        }
+        
+        @media only screen and (max-width: 640px) {
+            .banner {
+                width: 100%;
+            }
+            .container-body {
+                display: flex;
+                height: auto;
+            }
+            .container-body-1 {
+                width: 21%;
+                background: url(./images/logo_globe_a.gif) no-repeat right bottom;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                
+            }
+            .container-body-2 {
+                width: 79%;
+                height: auto;
+                background: #cd9934 url(./images/logo_globe_b.gif) no-repeat left bottom;
+                display: flex;
+                flex-direction: column;
+            }
+            #btn-1 {
+                cursor: pointer;
+                margin-top: 80px;
+            }
+            #btn-2 {
+                cursor: pointer;
+                margin-top: 60px;
+            }
+            #btn-3 {
+                cursor: pointer;
+                margin-top: 60px;
+            }
+            .contaner-1 {
+                display: flex;
+                flex-direction: column;
+                width: 240px;
+                padding: 10px;
+                font-size: 15px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: justify;
+            }
+            .contaner-2 {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                padding: 40px;
+            }
+    
+            #first_word {
+                font-size: 30px;
+            }
+            #img-2 {
+                margin-top: 30px;
+            }
+            .btn-home {
+                margin: 20px 0px 0 0;
+                padding: 12px 24px;
+                border-top: 1.5px solid #000;
+                border-bottom: 1.5px solid #000;
+                border-left: 1.5px solid #000;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            #product-btn {
+                color: #551a8b;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+            .container-body-1 {
+                width: 21%;
+                background: url(./images/logo_globe_a.gif) no-repeat right bottom;
+                height: 90.5%;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                
+            }
+            .container-body-2 {
+                width: 79%;
+                height: 90.5%;
+                background: #cd9934 url(./images/logo_globe_b.gif) no-repeat left bottom;
+                display: flex;
+            }
+            #btn-1 {
+                cursor: pointer;
+                margin-top: 80px;
+            }
+            #btn-2 {
+                cursor: pointer;
+                margin-top: 60px;
+            }
+            #btn-3 {
+                cursor: pointer;
+                margin-top: 60px;
+            }
+            .contaner-1 {
+                display: flex;
+                flex-direction: column;
+                width: 240px;
+                padding: 10px;
+                font-size: 15px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: justify;
+            }
+            .contaner-2 {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                padding: 40px;
+            }
+    
+            #first_word {
+                font-size: 30px;
+            }
+            #img-2 {
+                margin-top: 30px;
+            }
+            .btn-home {
+                margin: 20px 0px 0 0;
+                padding: 12px 24px;
+                border-top: 1.5px solid #000;
+                border-bottom: 1.5px solid #000;
+                border-left: 1.5px solid #000;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            #product-btn {
+                color: #551a8b;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .container-body-1 {
+                width: 21%;
+                background: url(./images/logo_globe_a.gif) no-repeat right bottom;
+                height: 90.5%;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                
+            }
+            .container-body-2 {
+                width: 79%;
+                height: 90.5%;
+                background: #cd9934 url(./images/logo_globe_b.gif) no-repeat left bottom;
+                display: flex;
+            }
+            #btn-1 {
+                cursor: pointer;
+                margin-top: 80px;
+            }
+            #btn-2 {
+                cursor: pointer;
+                margin-top: 60px;
+            }
+            #btn-3 {
+                cursor: pointer;
+                margin-top: 60px;
+            }
+            .contaner-1 {
+                display: flex;
+                flex-direction: column;
+                width: 240px;
+                padding: 10px;
+                font-size: 15px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: justify;
+            }
+            .contaner-2 {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                padding: 40px;
+            }
+    
+            #first_word {
+                font-size: 30px;
+            }
+            #img-2 {
+                margin-top: 30px;
+            }
+            .btn-home {
+                margin: 20px 0px 0 0;
+                padding: 12px 24px;
+                border-top: 1.5px solid #000;
+                border-bottom: 1.5px solid #000;
+                border-left: 1.5px solid #000;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            #product-btn {
+                color: #551a8b;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-main">
+        <img class="banner" src="./images/logo_scaal.gif" alt="logo">
+        <div class="container-body">
+            <div class="container-body-1">
+                <span onclick="navPage();" class="btn-home">home</span>
+                <img onclick="navPage1();" id="btn-1" src="./images/btn_ourstory_up.gif" alt="story">
+                <img onclick="navPage2();" id="btn-2" src="./images/btn_products_up.gif" alt="product">
+                <img onclick="navPage3();" id="btn-3" src="./images/btn_thisweek_up.gif" alt="thisweek">
+            </div>
+
+            <div class="container-body-2">
+                <div class="contaner-1">
+                    <span><span id="first_word">Welcome</span> to the Scaal Coffee Web site, home of the finest coffee gifts in the world.</span>
+                    <br/>
+                    <span>Take a moment to view our many <span id="product-btn" onclick="navPage2();">products</span>. We offer fine roasted products as well as items to wear and items for the office.</span>
+                    <br/>
+                    <span>Scaal has been serving fine coffee connoisseurs like you for over 50 years. We follow a roasting process that produces the finest coffees in the world.</span>
+                    <br/>
+                    <span>Check with us often to see our <span id="product-btn">special promotions</span> of the week.</span>
+                </div>
+
+                <div class="contaner-2">
+                    <img src="./images/coffee-cup.jpg" alt="cup">
+                    <img id="img-2" src="./images/coffee-online.gif" alt="onl">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function navPage() {
+            let html = `<span><span id="first_word">Welcome</span> to the Scaal Coffee Web site, home of the finest coffee gifts in the world.</span>
+            <br/>
+            <span>Take a moment to view our many <a href="/">products</a>. We offer fine roasted products as well as items to wear and items for the office.</span>
+            <br/>
+            <span>Scaal has been serving fine coffee connoisseurs like you for over 50 years. We follow a roasting process that produces the finest coffees in the world.</span>
+            <br/>
+            <span>Check with us often to see our <a href="/">special promotions</a> of the week.</span>`;
+            
+            let element = document.querySelector('.contaner-1');
+            console.log(element);
+            element.innerHTML = html;
+        }
+        function navPage1() {
+            let html = `<span id="first_word">Our Story </span>
+            <br/>
+            <span>What is the one philosophy that drives SCAAL? We believe that no matter where you go, you should always be able to enjoy the simple pleasure of a good cup of coffee in a comfortable environment. At home, reading the morning paper. At your local SCAAL, conversing with a confidant. Or perhaps in some foreign land, SCAAL will be greeting you like an old friend. After all, coffee is a ritual that transcends all cultural boundaries. It makes us feel alert, energetic and alive.</span>
+            <br/>`;
+            
+            let element = document.querySelector('.contaner-1');
+            console.log(element);
+            element.innerHTML = html;
+        }
+        function navPage2() {
+            let html = `<span id="first_word">Products</span>
+            <br/>
+            <span>What makes SCAAL the best coffee?</span>
+            <br/>
+            <span>Anders has passed down the knowledge he learned as an apprentice in the coffee fields to every buyer, roaster, and franchise owner. SCAAL's standards for coffee are never compromised. We only select SHB   strictly hard bean or strictly high grown   coffee beans. To ensure their flavorful oils are preserved, extraordinary steps are taken to protect the coffee bean from heat, light, air and moisture.</span>
+            <span>All these efforts are made so that we may offer you a perfect cup of coffee.</span>
+            <br/>`;
+            
+            let element = document.querySelector('.contaner-1');
+            console.log(element);
+            element.innerHTML = html;
+        }
+        function navPage3() {
+            let html = `<span id="first_word">This week</span>
+            <br/>
+            <span>There are so many places you could go to buy coffee. We've gone to extraordinary efforts to ensure that SCAAL is your best choice. The quality begins at harvest.</span>
+            <br/>
+            <span>SCAAL relies on selective picking, a labor-intensive process that involves making several passes among the trees for those cherries that are perfectly ripe. Then we select top grade SHB, which stands for strictly hard bean or strictly high grown.</span>
+            <br/>
+            <span>Beans that are grown at a minimum altitude of 4,000 feet above sea level for optimum flavor. Within hours of shipping our coffee to you, the beans are roasted on-site in small batches by a Certified Roastmaster and vacuum-packed to retain its fresh taste and rich aroma.</span>`;
+            
+            let element = document.querySelector('.contaner-1');
+            console.log(element);
+            element.innerHTML = html;
+        }
+    </script>
+</body>
+</html>

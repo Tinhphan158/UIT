@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "TCMI";
+  src: url("../../css/fonts/TCMI____.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TCM";
+  src: url("../../css/fonts/TCM_____.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TCCM";
+  src: url("../../css/fonts/TCCM____.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TCCEB";
+  src: url("../../css/fonts/TCCEB.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TCCB";
+  src: url("../../css/fonts/TCCB____.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TCBI";
+  src: url("../../css/fonts/TCBI____.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TCB";
+  src: url("../../css/fonts/TCB_____.ttf") format("truetype");
+}
+
+p {
+  color: #4b2802;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+  background-color: white;
+}
+
+.header-container {
+  background-color: #cca45c;
+  border-top: 2px dotted #4b2802;
+  border-bottom: 2px dotted #4b2802;
+  color: #4b2802;
+  padding: 8px;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: "TCM";
+  color: #4b2802;
+}
+
+form {
+  margin: 0 1rem;
+  width: 80%;
+}
+
+td {
+  padding: 0.3rem 0;
+}
+
+label {
+  font-family: Arial, sans-serif;
+  color: #4b2802;
+  font-size: 1rem;
+  padding-right: 3rem;
+}
+
+input {
+  font-family: Arial, sans-serif;
+  color: #4b2802;
+  font-size: 1rem;
+  padding: 0.2rem;
+  border: 2px dotted #4b2802;
+}
+
+textarea {
+  width: 20rem;
+  height: 8rem;
+  font-family: Arial, sans-serif;
+  color: #4b2802;
+  font-size: 1rem;
+  padding: 0.2rem;
+  border: 2px dotted #4b2802;
+}
+
+button {
+  font-family: Arial, sans-serif;
+  color: #cca45c;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.3rem;
+  border: 3px solid #000;
+  background-color: #4b2802;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 3</title>
+    <style>
+        body {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        
+        @media only screen and (max-width: 640px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 0px
+            }
+            .item {
+                display: flex;
+                margin-top: 16px;
+                width: 80%;
+            }
+            .footer {
+                height: auto; 
+                width: 400px; 
+                background-color: #ccc;
+                margin-top: 16px; 
+                text-indent: 60px;
+            }
+            
+            .footer p {
+                color: blue;
+                padding: 10px 0;
+            }
+        }
+
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 20px
+            }
+            .item {
+                display: flex;
+                margin-top: 16px;
+                width: 70%;
+            }
+            .footer {
+                height: auto; 
+                background-color: #ccc;
+                margin-top: 16px; 
+                text-indent: 60px;
+                width: 600px;
+            }
+            
+            .footer p {
+                color: blue;
+                padding: 10px 0;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {  
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 40px
+            }
+            .item {
+                display: flex;
+                margin-top: 16px;
+                width: 80%;
+            }
+
+            .footer {
+                height: auto; 
+                width: 800px; 
+                background-color: #ccc;
+                margin-top: 16px; 
+                text-indent: 60px;
+            }
+            
+            .footer p {
+                color: blue;
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 style="color: #00d103; text-align: center;">Định dạng văn bảng</h1>
+        <div class="item">
+            <b style="text-decoration: underline;">Hóa học: </b>
+            <i style="margin: 0 6px;">Nước: </i>
+            <p style="color: red;">H<sub>2</sub>O</p> 
+            <i style="margin: 0 6px;">;Axit Sunfuric:</i> 
+            <p style="color: red;">H<sub>2</sub>SO<sub>4</sub></p>
+        </div>
+
+        <div class="item">
+            <b style="text-decoration: underline;">Toán học: </b>
+            <i style="margin: 0 6px;">Phương trình bậc 2: </i> 
+            <p style="color: red; margin-top: -4px;">ax<sup>2</sup> + bx + c</p>
+        </div>
+
+        <div class="item">
+            <b style="text-decoration: underline;">Tin học: </b>
+            <i style="margin: 0 6px;">Vòng lặp for: </i> 
+        </div>
+
+        <div class="footer">
+            <p>int tong = 0;</p>
+            <p>for (int i = 1; i <= 10; i++)</p>
+            <p style="margin-left: 40px;">tong += i;</p>
+            <p>printf ("Tong cac so tu 1 => 10 la: %d\n", tong);</p>
+        </div>
+    </div>
+</body>
+</html>

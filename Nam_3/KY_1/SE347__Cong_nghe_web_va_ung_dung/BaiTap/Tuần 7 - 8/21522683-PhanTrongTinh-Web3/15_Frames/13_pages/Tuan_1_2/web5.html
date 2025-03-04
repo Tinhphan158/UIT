@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <title>Bài tập 5</title>
+        <style>
+          @font-face {
+              font-family: "myFirstFont";
+              src:url("./fonts/UTM_Wedding_K_T.ttf")
+          }
+          
+          .font{
+              font-family: "myFirstFont";
+              color: #fff;
+              font-weight: bold;
+              font-size: 50px;
+              text-shadow: -4px 4px 8px #ff33cc;
+          }
+          * {
+              box-sizing: border-box;
+          }
+          body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url(./images/binh-hoa.jpg) no-repeat left center fixed, 
+                        url(./images/nen-hoa-hong.jpg) no-repeat bottom right fixed;           
+          }
+          @media only screen and (max-width: 640px) {
+            .item_main {
+                display: flex;
+            }
+            
+            li {
+                list-style: none;
+            }
+            
+            ul {
+                margin: 10px 0;
+            }
+            .container-body {
+                margin-left: 40px;
+            }
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: url(./images/nen-hoa-hong.jpg) no-repeat bottom right fixed;           
+              }
+          }
+  
+          @media only screen and (min-width: 640px) and (max-width: 1200px) {
+            .item_main {
+                display: flex;
+            }
+            
+            li {
+                list-style: none;
+            }
+            
+            ul {
+                margin: 10px 0;
+            }
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: url(./images/nen-hoa-hong.jpg) no-repeat bottom center fixed;           
+              }
+          }
+  
+          @media only screen and (min-width: 1200px) {
+            .item_main {
+                display: flex;
+            }
+            
+            li {
+                list-style: none;
+            }
+            
+            ul {
+                margin: 10px 0;
+            }
+          }
+        
+    </style>
+    </head>
+    <body>
+        <div>
+            <h1 class="font" style="text-align: center; margin-top: 20px;">Shop
+                Hoa tươi Hạnh Phúc</h1>
+            <div style="border-bottom: 3px solid #ccc; padding-bottom: 10px;" class="container-body">
+                <div class="item_main">
+                    1. <p
+                        style="background-color: #ff33cc; margin-left: 8px; color: #fff; font-weight: 600;">Giới
+                        thiệu</p>
+                </div>
+                <ul>
+                    <li>
+                        <img src="./images/bullet-hoa-tim.png" alt="style">
+                        Thành lập ngày 01/07/2014 
+                    </li>
+    
+                    <li>
+                        <img src="./images/bullet-hoa-tim.png" alt="style">
+                        Chuyên cung cấp các loại hoa tươi  
+                    </li>
+    
+                    <li>
+                        <img src="./images/bullet-hoa-tim.png" alt="style">
+                        Có trên 20 cửa hàng bán lẻ tại TP.HCM  
+                    </li>
+    
+                    <li>
+                        <img src="./images/bullet-hoa-tim.png" alt="style">
+                        Nhận kết giỏ hoa theo yêu cầu của khách hàng 
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div style="margin-top: 16px;" class="container-body">
+                <div class="item_main">
+                    2. <p
+                        style="background-color: #ff33cc; margin-left: 8px; color: #fff; font-weight: 600;">Liên hệ</p>
+                </div>
+                <ul>
+                    <li>
+                        <img src="./images/bullet-tron-hong.png" alt="style">
+                        Địa chỉ: <b>245 Nguyễn Văn Cừ Q5, TP.HCM</b>  
+                    </li>
+                    <li>
+                        <img src="./images/bullet-tron-hong.png" alt="style">
+                        Điện thoại: (08)39404272  
+                    </li>
+    
+                    <li>
+                        <img src="./images/bullet-tron-hong.png" alt="style">
+                        Fax:  (08)62619416 (Ext. 115)  
+                    </li>                
+                </ul>
+            </div>
+
+            <div style="display: flex; font-style: italic;" class="container-body">
+                <div style="display: flex; color: #59007a;">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"/></svg>
+                    Copyright:
+                </div> 
+                <p style="margin-left: 4px; color: #ff33cc;">Công Ty Tin Học</p>
+            </div>
+        </div>
+
+    </body>
+</html>

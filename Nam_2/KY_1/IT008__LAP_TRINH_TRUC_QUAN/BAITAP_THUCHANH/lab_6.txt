@@ -1,0 +1,3 @@
+Viết ứng dụng quản lý danh sách lớp và sinh viên từng lớp (sử dụng SQL server làm cd):
+- Màn hình quản lý lớp: gồm danh sách các lớp (Mã, tên, số sinh viên, các tính năng thêm, sửa, xoá)
+- Màn hình quản lý sinh viên của lớp: gồm danh sách các sinh viên (Mã, tên, lớp, điểm trung bình, chức năng thêm sửa xoá)

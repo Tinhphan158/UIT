@@ -1,0 +1,371 @@
+html {
+  background-color: #bd7f10;
+  /* display: flex; */
+  justify-content: center;
+  background-image: url("../images/coffee_seed.png");
+  background-repeat: repeat-x; /* Chỉ lặp lại theo chiều ngang */
+  background-attachment: fixed;
+}
+
+#mainContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+#container {
+  width: 60%;
+  max-width: 100%; /* Đảm bảo container không vượt quá 100% chiều ngang */
+  margin: 0 auto; /* Canh giữa container */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Đối với màn hình nhỏ, giảm độ rộng của container */
+@media (max-width: 768px) {
+  #container {
+    width: 90%; /* Hoặc bất kỳ giá trị phù hợp nào dựa trên yêu cầu của bạn */
+  }
+}
+
+.snow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-image: url("../images/snow.png");
+  animation: snowfall 4s ease-in-out infinite;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(100px, 50vh);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 30%;
+  background-color: #4e2801;
+  text-shadow: 3px 3px 5px #7300a2;
+  text-align: center;
+  background-size: contain;
+  position: relative;
+}
+
+.buttons {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+}
+
+.image-container {
+  padding: 10px;
+  text-align: right;
+}
+
+.corner-buttons {
+  padding: 10px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttons {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  margin: 0 2px;
+}
+
+.buttonThemeBrown {
+  background-color: #ffc851;
+}
+
+.buttonThemeGreen {
+  background-color: #bfe777;
+}
+
+.buttonThemePink {
+  background-color: #ffc1e7;
+}
+
+#dropdownTheme {
+  top: 10px;
+  right: 10px;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+select{
+  border:none;
+  padding: 5px 20px;
+  border-radius:5px;
+}
+
+select:focus{
+  outline:none;
+}
+
+/* Thêm kiểu CSS cho lớp "active" */
+.theme.active {
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+
+#textHeader {
+  width: 60%;
+}
+
+#menu {
+  float: left;
+  width: 20%;
+  height: 580px;
+  background: left bottom repeat-x, #fee8d1;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+#menu .tab-icon {
+  display: none; /* Ẩn ảnh ban đầu */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 30%;
+}
+
+#menu a {
+  list-style-position: inside;
+  color: #4b2802;
+  font-size: large;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000000;
+  padding: 15px 30px;
+  position: relative;
+}
+
+#menu a:hover,
+#menu a.selected {
+  background-color: #cca45c;
+  color: #4b2802;
+  transition: 0.5s;
+  border-top: 2px dotted #4b2802;
+  border-bottom: 2px dotted #4b2802;
+}
+
+#menu a.selected .tab-icon {
+  display: inline-block; /* Hiển thị ảnh khi tab được chọn */
+}
+
+.bottom-image {
+  height: 200px;
+  margin-top: 20px; /* Điều chỉnh khoảng cách giữa tab và hình ảnh dưới cùng */
+}
+
+#content {
+  float: right;
+  width: 80%;
+  height: 580px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  /* Space between */
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  background-color: #4b2802;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+#copyright {
+  float: left;
+  padding: 10px;
+  color: #d4b16d;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: bold;
+}
+#links {
+  float: right;
+  padding: 10px;
+  color: #d4b16d;
+  text-align: right;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#links a {
+  color: #d4b16d;
+  text-decoration: none;
+}
+#links a:hover {
+  color: #fff500;
+  text-decoration: underline;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #4b2802;
+  overflow: hidden;
+  text-shadow: 1px 1px 1px #000;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #04aa6d;
+  color: white;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  text-shadow: 1px 1px 1px #000;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #04aa6d;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should o and close the topnav (.Icon) */
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn,
+  #menu,
+  #links {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript wnen tne user clicks on the icon. This class makes the topnav look go on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  #content {
+    width: 100%;
+  }
+  #copyright {
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(#4b2802, #bdf405);
+  }
+}

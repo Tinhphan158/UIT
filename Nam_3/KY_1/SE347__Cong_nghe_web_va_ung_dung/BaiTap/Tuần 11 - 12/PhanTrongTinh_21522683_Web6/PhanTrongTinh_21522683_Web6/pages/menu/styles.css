@@ -1,0 +1,237 @@
+/* Trong tệp CSS hoặc thẻ <style> của tệp HTML */
+
+@font-face {
+    font-family: 'TCMI';
+    src: url('../../css/fonts/TCMI____.ttf') format('truetype');
+    /* Điều chỉnh đường dẫn đến tệp font tương ứng */
+}
+
+@font-face {
+    font-family: 'TCM';
+    src: url('../../css/fonts/TCM_____.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TCCM';
+    src: url('../../css/fonts/TCCM____.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TCCEB';
+    src: url('../../css/fonts/TCCEB.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TCCB';
+    src: url('../../css/fonts/TCCB____.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TCBI';
+    src: url('../../css/fonts/TCBI____.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TCB';
+    src: url('../../css/fonts/TCB_____.ttf') format('truetype');
+}
+
+.header-container {
+    background-color: #cca45c;
+    border-top: 2px dotted #4b2802;
+    border-bottom: 2px dotted #4b2802;
+    color: #4b2802;
+    padding: 8px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+    background-color: white;
+
+}
+
+table {
+    width: 100%;
+    margin-top: 50px;
+}
+
+td {
+
+    justify-content: center;
+    align-items: center;
+}
+
+.div-menu img {
+    width: 100%;
+    height: 74%;
+    object-fit: cover;
+    align-self: center;
+
+}
+
+.div-menu {
+    border: 2px dotted #4b2802;
+    height: 300px;
+    width: 300px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.div-title {
+    background-color: #cca45c;
+
+
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+p {
+    color: #4b2802;
+    font-family: Arial, sans-serif;
+    line-height: 0.3;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    align-self: center;
+
+}
+
+.price {
+    font-weight: 550;
+}
+
+a {
+    text-decoration: none;
+}
+
+.div-image-size {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin-top: 30px;
+}
+
+.div-image {
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+    background-color: #4b2802;
+}
+
+.div-list-images {
+    display: flex;
+
+    height: 25%;
+    justify-content: space-between;
+}
+
+.img-main {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    align-self: center;
+
+}
+
+.div-small-image {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    align-self: center;
+    padding: 10px;
+    position: relative;
+}
+
+
+.div-small-image img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    align-self: center;
+    padding: 10px;
+    position: absolute;
+}
+
+.bar {
+    height: 25px;
+    width: 95%;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 10px;
+}
+
+.div-quanity-size {
+    display: flex;
+    flex-direction: column;
+    /* Chuyển sang hướng cột */
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+#quantity {
+    height: 50px;
+    width: 50px;
+    border: 2px dotted #4b2802;
+    font-size: 20px;
+    color: #4b2802;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+#select-size {
+    margin-left: 10px;
+    height: 56px;
+    width: 200px;
+    border: 2px dotted #4b2802;
+    font-size: 20px;
+    color: #4b2802;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+#button-buy {
+    margin-top: 10px;
+    /* Đặt khoảng cách giữa input/select và nút "Buy" */
+    align-self: self-start;
+    border: #000000 2px solid;
+    background-color: #4b2802;
+    color: #cca45c;
+    width: 60px;
+    height: 40px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.benefits-effects {
+    margin-top: 50px;
+    font-size: 22px;
+    color: #4b2802;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+#describe {
+    color: #4b2802;
+    font-family: Arial, sans-serif;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.selected {
+    background-color: #cca45c;
+}

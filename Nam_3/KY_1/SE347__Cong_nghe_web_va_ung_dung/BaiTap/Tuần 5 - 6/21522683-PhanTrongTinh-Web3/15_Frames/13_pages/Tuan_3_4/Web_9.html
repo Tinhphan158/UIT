@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 - Free.com</title>
+    <link rel="stylesheet" href="./main.css">
+    <style>
+        * { 
+            margin: 0;
+            padding: 0;
+            font-size: 100%;
+        }
+
+        body, html {
+            height: 100%;
+            background-color: #2f6391;
+        }
+        p {
+            color: #6e95b0;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
+        span {
+            color: #215c87;
+            font-weight: 600;
+        }
+        a {
+            color: #215c87;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #002c4c;
+        }
+        .bg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            height: auto;
+            width: 80%;
+            margin: 0 auto;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        @media only screen and (max-width: 640px) {
+            .bg {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #fff;
+                height: auto;
+                width: 100%;
+                margin: 0 auto;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .logo {
+                height: 80px; width: 300px;
+                display: none;
+            }
+            .logoRPS {
+                height: 50px; width: 100px;
+            }
+            .banner {
+                height: 60px; 
+                width: 300px; 
+                margin-top: 26px;
+            }
+            .footer {
+                display: flex; 
+                width: 70%; 
+                margin-top: 36px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .banner2 {
+                display: flex;
+                justify-content: center; 
+                width: 80%;
+                flex-direction: column;
+                align-items: center;
+            }
+            .banner2-img {
+                height: 80px; width: 200px;
+            }
+        }
+
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+            .logo {
+                height: 80px; width: 300px;
+                display: none;
+            }
+            .logoRPS {
+                height: 80px; width: 180px;
+            }
+            .banner {
+                height: 50px; 
+                width: 400px; 
+                margin-top: 26px;
+            }
+            .footer {
+                display: flex; justify-content: space-around; width: 70%; margin-top: 36px;
+            }
+            .banner2 {
+                display: flex;
+                justify-content: center; 
+                width: 80%;
+                flex-direction: column;
+                align-items: center;
+            }
+            .banner2-img {
+                height: 80px; width: 200px;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) { 
+            .logo {
+                height: 80px; width: 300px;
+            }
+            .logoRPS {
+                display: none;
+                height: 80px; width: 300px;
+            }
+            .banner {
+                height: 60px; 
+                width: 600px; 
+                margin-top: 26px;
+            }
+            .footer {
+                display: flex; justify-content: space-around; width: 70%; margin-top: 36px;
+            }
+            .banner2 {
+                display: flex; justify-content: space-evenly; width: 80%
+            }
+            .banner2-img {
+                height: 100px; width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <img class="logo" src="./images/logoFreecom.gif" alt="logo">
+        <img class="logoRPS" src="./images/logoFreeDom.jpg" alt="logo">
+        <img class="banner" src="./images/bannerFreecom.gif" alt="banner">
+
+        <p style="margin-top: 26px;">Who says nothing is <span>FREE</span>?</p>
+        <p><a>At FREE.com</a>, the Internets’ most popular free site, thousands of people find <span>something for nothing</span> every day.</p>
+        <p>Over <span>8000</span> Internet sites offering products and services at <span>no charge</span>.</p>
+        <p>New <span>free</span> sites added every day.</p>
+        <p>Hundreds of categories, minimum of 10,000 <span>Free</span> items</p>
+        <p>Quick and easy <span>Search</span> allows you to find just what you’re looking for.</p>
+        <p>You can suggest a new <span>free</span> site that you like for addition to <a>FREE.com</a></p>
+        <p>Review the offers and tell other Internet users what you thought of them.</p>
+        <p>Make <a>FREE.com</a> your first choice when searching for the best <span>free</span> sites and offers on the Net.</p>
+        <p>Oh, and by the way, it's all <span>Free</span>!</p>
+
+        <div class="banner2">
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <img class="banner2-img" src="./images/logon.gif" alt="logon">
+                <p style="margin-top: 16px;">Existing members use this link to login to <a>Free.com</a></p>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <img class="banner2-img" src="./images/join.gif" alt="join">
+                <p style="margin-top: 16px;">Use this link to register at Free.com, it is completly <span>FREE</span>!</p>
+            </div>
+        </div>
+
+        <p style="margin-top: 36px; font-size: 14px;">Questions? Problems? Contact us at <span style="text-decoration: underline; color: #d42626;">support@free.com.</span></p>
+
+        <div class="footer">
+            <img style="margin: 20px 0;" src="./images/singlesbutton.gif" alt="single">
+            <img style="margin: 20px 0;" src="./images/chatbutton.gif" alt="chat">
+            <img style="margin: 20px 0;" src="./images/dietbutton.gif" alt="diet">
+        </div>
+
+        <p style="margin-top: 18px; color: #303030; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 13px;">&copy 2001-2002 National A-1 Advertising. All Rights Reserved.</p>
+        <p style="color: #303030; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 13px;">- read the disclaimer -</p>
+    </div>
+</body>
+</html>

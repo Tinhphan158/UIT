@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "TCMI";
+  src: url("../../css/fonts/TCMI____.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TCM";
+  src: url("../../css/fonts/TCM_____.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TCCM";
+  src: url("../../css/fonts/TCCM____.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TCCEB";
+  src: url("../../css/fonts/TCCEB.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TCCB";
+  src: url("../../css/fonts/TCCB____.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TCBI";
+  src: url("../../css/fonts/TCBI____.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TCB";
+  src: url("../../css/fonts/TCB_____.ttf") format("truetype");
+}
+
+p {
+  color: #4b2802;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+  background-color: white;
+}
+
+.header-container {
+  background-color: #cca45c;
+  border-top: 2px dotted #4b2802;
+  border-bottom: 2px dotted #4b2802;
+  color: #4b2802;
+  padding: 8px;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: "TCM";
+  color: #4b2802;
+}
+
+img {
+  width: 100%;
+  height: 14rem;
+}

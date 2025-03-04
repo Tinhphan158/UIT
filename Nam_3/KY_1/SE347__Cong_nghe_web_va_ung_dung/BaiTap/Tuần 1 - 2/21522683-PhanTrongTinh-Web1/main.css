@@ -1,0 +1,154 @@
+
+/* Bài 1 */
+.title-header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff2cc0;
+    padding: 15px 0;
+    margin: 10px;
+    background-color: rgba(255, 169, 215, 0.5);
+}
+
+.body-content {
+    margin: 20px 10px 10px 10px;
+    padding: 20px 0;
+    /* background: rgba(252, 255, 48, 0.5) url("./images/nen_bai_mot-removebg-preview.png") left center no-repeat local; */
+    background: url("./images/nen_bai_mot-removebg-preview.png") left center no-repeat,
+    url("./images/nen_bai_mot-removebg-preview.png") right center no-repeat;
+    background-color: rgba(252, 255, 48, 0.5);
+    background-size: 300px;
+    text-align: center;
+}
+.para_1 {
+    color: blue;
+    font-style: italic;
+}
+
+.para_2 {
+    color: rgb(201, 0, 117);
+    font-style: italic;
+}
+
+.para_3 {
+    color: #00aa1c;
+    font-style: italic;
+}
+
+
+/* Bài 2 */
+
+.container {
+    text-align: center;
+    margin: 40px 160px 0;
+}
+
+.content {
+    text-align: left;
+    margin: 30px 160px 0;
+}
+.content p {
+    color: white;
+    text-align: left;
+    text-indent: 100px;
+}
+.bg {
+    /* The image used */
+    background-image: url(./images/hoang-hon-phu-quoc.jpg);
+  
+    /* Full height
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+/* Bài 3 */
+
+.item {
+    display: flex;
+    margin-top: 16px;
+}
+
+.footer {
+    height: auto; 
+    width: 800px; 
+    background-color: #ccc;
+    margin-top: 16px; 
+    text-indent: 60px;
+}
+
+.footer p {
+    color: blue;
+    padding: 10px 0;
+}
+
+
+/* Bài 4 */
+
+.header {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 0;
+    border: 4px double #1dfa12;
+    margin-top: 20px;
+}
+p {
+    margin: 0;
+}
+.item_1 {
+    display: flex;
+    margin-top: 20px;
+}
+.item_1 p {
+    margin-right: 10px;
+}
+.item_1 p:first-letter {
+    color: #1dfa12;
+    font-size: 36px;
+    font-style: italic;
+}
+
+.item_2 {
+    margin-top: -54px;
+}
+
+.item_2 p {
+    text-indent: 16px;
+}
+
+.item_3 {
+    text-align: right;
+    color: #fff;
+    font-size: 22px;
+    background-color: #1dfa12;
+    margin: 16px 0;
+    padding: 2px 0;
+    font-weight: bold;
+}
+
+.item_4 {
+    display: flex;
+    margin-top: 16px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ff6200;
+}
+
+
+/* Bài 5 */
+
+.item_main {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 10px 0;
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11 - FormDangNhap</title>
+
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+        }
+        html, body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        
+        @media only screen and (max-width: 640px) {
+            .bg-main {
+                width: 80%;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: 2px dashed #cd1717;
+                border-radius: 10px;
+                background: url(./images/login.jpg) no-repeat bottom right;
+            }
+            .title {
+                font-size: 36px;
+                color: #cb0000;
+                margin: 20px 0 30px;
+            }
+            .container-input {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin: 10px 0;   
+                width: 360px;        
+            }
+            .container-input input{
+                width: 200px;
+                border: 1px dashed #cd1717;
+                outline: none;
+                background-color: rgb(254, 204, 203, 0.5);
+                border-radius: 20px;
+                height: 30px;
+                padding: 2px 16px;
+                margin-left: 10px;
+            }
+            .container-btn {
+                display: flex;
+            }
+    
+            button {
+                width: 120px;
+                height: 30px;
+                padding: 4px 10px;
+                margin: 20px 16px;
+                background-color: #d40000;
+                color: #fff;
+                font-weight: 600;
+                border-radius: 20px;
+                border: 2px solid #ccc;
+                cursor: pointer;
+            }
+            #lbl-text {
+                color: #cc170d;
+                margin-bottom: 40px;
+                margin-top: 10px;
+            }
+        }
+
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+            .bg-main {
+                width: 60%;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: 2px dashed #cd1717;
+                border-radius: 10px;
+                background: url(./images/login.jpg) no-repeat bottom right;
+            }
+            .title {
+                font-size: 36px;
+                color: #cb0000;
+                margin: 20px 0 30px;
+            }
+            .container-input {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin: 10px 0;   
+                width: 360px;        
+            }
+            .container-input input{
+                width: 200px;
+                border: 1px dashed #cd1717;
+                outline: none;
+                background-color: rgb(254, 204, 203, 0.5);
+                border-radius: 20px;
+                height: 30px;
+                padding: 2px 16px;
+                margin-left: 10px;
+            }
+            .container-btn {
+                display: flex;
+            }
+    
+            button {
+                width: 120px;
+                height: 30px;
+                padding: 4px 10px;
+                margin: 20px 16px;
+                background-color: #d40000;
+                color: #fff;
+                font-weight: 600;
+                border-radius: 20px;
+                border: 2px solid #ccc;
+                cursor: pointer;
+            }
+            #lbl-text {
+                color: #cc170d;
+                margin-bottom: 40px;
+                margin-top: 10px;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .bg-main {
+                width: 40%;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: 2px dashed #cd1717;
+                border-radius: 10px;
+                background: url(./images/login.jpg) no-repeat bottom right;
+            }
+            .title {
+                font-size: 36px;
+                color: #cb0000;
+                margin: 20px 0 30px;
+            }
+            .container-input {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin: 10px 0;   
+                width: 360px;        
+            }
+            .container-input input{
+                width: 200px;
+                border: 1px dashed #cd1717;
+                outline: none;
+                background-color: rgb(254, 204, 203, 0.5);
+                border-radius: 20px;
+                height: 30px;
+                padding: 2px 16px;
+                margin-left: 10px;
+            }
+            .container-btn {
+                display: flex;
+            }
+    
+            button {
+                width: 120px;
+                height: 30px;
+                padding: 4px 10px;
+                margin: 20px 16px;
+                background-color: #d40000;
+                color: #fff;
+                font-weight: 600;
+                border-radius: 20px;
+                border: 2px solid #ccc;
+                cursor: pointer;
+            }
+            #lbl-text {
+                color: #cc170d;
+                margin-bottom: 40px;
+                margin-top: 10px;
+            }
+        }
+
+    </style>
+    <script>
+        function Validate() {
+            let username = document.getElementById('input-user');
+            let pass = document.getElementById('input-pass');
+            let lbl = document.getElementById('lbl-text');
+
+            if (username.value === "" || username.value === null) 
+            {
+                lbl.innerText = "Vui lòng nhập tên đăng nhập !";
+                return false;
+            }
+            if (pass.value === "" || pass.value === null) 
+            {
+                lbl.innerText = "Vui lòng nhập mật khẩu !";
+                return false;
+            }
+
+            if (username.value === "Trọng Tính" && pass.value === "123456")
+            {
+                lbl.innerHTML = `Chào bạn <b><i>${username.value}</i></b>`;
+                alert(`Chào bạn ${username.value} !`);
+                return true;
+            }
+            else {
+                lbl.innerText = "Thông tin đăng nhập không hợp lệ !"
+                return false;
+            }
+        }
+
+        function Refresh() {
+            let username = document.getElementById('input-user');
+            let pass = document.getElementById('input-pass');
+            let lbl = document.getElementById('lbl-text');
+            username.value = "";
+            pass.value = "";
+            lbl.innerText = "";
+            username.autofocus = true;
+        }
+    </script>
+</head>
+<body>
+    <div class="bg-main">
+        <h1 class="title">Form đăng nhập</h1>
+        <div class="container-input">
+            <span>Tên người dùng</span>
+            <input id="input-user" type="text" required autofocus>
+        </div>
+        <div class="container-input">
+            <span>Mật khẩu</span>
+            <input id="input-pass" type="password" required>
+        </div>
+        <div class="container-btn">
+            <button onclick="Validate();">Đăng nhập</button>
+            <button onclick="Refresh();">Làm lại</button>
+        </div>
+        <span id="lbl-text"></span>
+    </div>
+</body>
+</html>

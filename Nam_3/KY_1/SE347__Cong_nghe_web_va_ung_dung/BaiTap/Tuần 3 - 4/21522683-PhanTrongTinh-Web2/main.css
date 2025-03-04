@@ -1,0 +1,38 @@
+/* Bai 6 */
+
+.text6 {
+    color: #b3baa3; 
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 13px;
+}
+.pt-8 {
+    padding-top: 8px;
+}
+.mt-8 {
+    margin-top: 8px;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+.link6 {
+    color: #ff0900; 
+    text-decoration: underline;
+    font-size: 13px;
+    cursor: pointer;
+}
+.link6:hover {
+    color: #fdc72f;
+}
+.title6 {
+    color: #fff; 
+    font-weight: bold; 
+    font-size: 15px; 
+    margin-top: 10px;
+}
+
+.text6-footer {
+    color: #776d7a;
+    font-size: 10.6px;
+}
+
+/* Bài 7 */

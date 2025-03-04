@@ -1,0 +1,25 @@
+- Chú ý ngôn ngữ trên web, mấy placeholder trong thanh search 
+- người dùng ko có email thì sao, thêm kênh quản lý thông tin liên lạc
+- thêm dữ liệu filter
+- Những người mà họ muốn làm thành viên thì phải gửi yêu cầu.
+- Trình bày ý tưởng của chiến dịch, quyền lợi của người tham gia.
+- Không được xóa dự án
+- Làm thêm tính năng gửi thông báo khi có chiến dịch mới. Admin cũng nhận được thêm thông báo khi người dùng.
+- Thống kê báo cáo 
+- Thêm số lượng like chiến dịch để ng dùng xem coi nó có uy tin cao
+- Tìm được điểm khác biệt của web của mình khác biệt trên thị trường
+- Tìm hiểu thêm thanh toán ở ngoài đời thực, quy trình đăng ký dịch vụ như nào để triển khai thực tế.
+
+
+----- TIÊU CHÍ ĐÁNH GIÁ -----
+
+6 cột điểm, chia cho 4 người 
+- người hướng dẫn: điểm được nhân 2
+- người phản biện: điểm cũng nhân 2
+- ông chủ tịch: điểm hệ số 1
+- cô thư ký: điểm nhân 1
+
+
+
+
+
